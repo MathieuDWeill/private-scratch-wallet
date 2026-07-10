@@ -1,0 +1,53 @@
+{
+  "name": "private-scratch-wallet",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Private Scratch Wallet \u2014 confidential autonomous DeFi risk policies with iExec Nox concepts on Sepolia.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "compile": "node scripts/compile-local.mjs",
+    "test": "npm run compile && hardhat test --no-compile",
+    "deploy:sepolia": "npm run compile && hardhat run scripts/deploy.ts --network sepolia --no-compile",
+    "commit:sample": "hardhat run scripts/commit-sample.ts --network sepolia",
+    "preflight": "node scripts/preflight.mjs",
+    "final": "npm run typecheck && npm run build && npm run compile && npm run test && npm run preflight",
+    "preflight:strict": "node scripts/final-check.mjs",
+    "prepare:submission": "node scripts/prepare-submission-bundle.mjs",
+    "record:demo": "node scripts/record-demo.mjs",
+    "zero:local": "npm run preflight && npm run typecheck && npm run build && npm run compile && npm run test",
+    "ship": "npm run zero:local && npm run prepare:submission",
+    "doctor": "node scripts/doctor.mjs",
+    "pages:build": "npm run build",
+    "codex:finalize": "cat SUBMISSION_READY/CODEX_FINALIZE_PROMPT.md",
+    "verify:sepolia": "hardhat run scripts/verify.ts --network sepolia --no-compile",
+    "export:frontend-config": "node scripts/export-frontend-config.mjs",
+    "sepolia:ready": "node scripts/validate-sepolia-ready.mjs",
+    "smoke:ui": "node scripts/smoke-ui.mjs",
+    "max:local": "npm run doctor && npm run typecheck && npm run build && npm run compile && npm run test && npm run smoke:ui && npm run sepolia:ready && npm run prepare:submission",
+    "after:deploy": "npm run export:frontend-config && npm run build && npm run prepare:submission",
+    "hardhat:compile": "hardhat compile"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "6.0.3",
+    "ethers": "^6.13.5",
+    "lucide-react": "^0.468.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "vite": "8.1.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "dotenv": "^17.4.2",
+    "hardhat": "^2.22.17",
+    "solc": "^0.8.24",
+    "ts-node": "^10.9.2",
+    "typescript": "5.4.5"
+  }
+}

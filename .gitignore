@@ -1,0 +1,21 @@
+node_modules/
+dist/
+artifacts/
+cache/
+typechain-types/
+coverage/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+*.zip
+*.Zone.Identifier
+
+# generated final ops
+submission_bundle/
+demo_recording_notes/
+*.zip
+*.webm
+*.mp4
+*.Zone.Identifier

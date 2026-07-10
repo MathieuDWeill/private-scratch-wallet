@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" rx="96" fill="#080B12"/>
+<circle cx="256" cy="256" r="205" fill="#101A32" stroke="#78F2CB" stroke-width="8"/>
+<rect x="112" y="144" width="288" height="184" rx="42" fill="#18243E" stroke="#78F2CB" stroke-width="8"/>
+<path d="M155 203H357" stroke="#FFCF74" stroke-width="14" stroke-linecap="round"/>
+<path d="M155 243H305" stroke="#78F2CB" stroke-width="14" stroke-linecap="round"/>
+<path d="M205 278L236 308L309 229" stroke="#78F2CB" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="256" y="398" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#EDF5FF">PRIVATE</text>
+<text x="256" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#78F2CB">SCRATCH</text>
+</svg>

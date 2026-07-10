@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#133b4c"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="960" cy="120" r="260" fill="#28f0b4" opacity="0.10"/>
+  <circle cx="220" cy="520" r="240" fill="#7c3aed" opacity="0.18"/>
+  <text x="80" y="150" font-family="Arial, sans-serif" font-size="62" font-weight="800" fill="#f8fafc">Private Scratch Wallet</text>
+  <text x="80" y="230" font-family="Arial, sans-serif" font-size="34" fill="#a7f3d0">Scratch Wallet limits downside.</text>
+  <text x="80" y="280" font-family="Arial, sans-serif" font-size="34" fill="#a7f3d0">Private Scratch Wallet keeps the policy private.</text>
+  <rect x="80" y="350" width="500" height="90" rx="24" fill="#101827" stroke="#28f0b4"/>
+  <text x="110" y="407" font-family="Arial, sans-serif" font-size="28" fill="#f8fafc">Nox-style confidential risk policy</text>
+  <text x="80" y="520" font-family="Arial, sans-serif" font-size="26" fill="#cbd5e1">GitHub Pages · Ethereum Sepolia · no backend</text>
+</svg>
