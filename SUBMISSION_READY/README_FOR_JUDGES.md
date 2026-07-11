@@ -9,7 +9,7 @@ Private Scratch Wallet is a no-server GitHub Pages dApp that extends Scratch Wal
 - Sepolia contract: https://sepolia.etherscan.io/address/0x33145C082811c5E88ce055DAD816aE540a89da94
 - Sample commitIntent tx: https://sepolia.etherscan.io/tx/0xacb0662e5ec058ef664fbcd99869988cca71c4ffadbe770f4c03b62b41b96109
 - Sample publishDecision tx: https://sepolia.etherscan.io/tx/0x2543771ad364220b9172a86eea2373556e74454ab89920aeeba5499bd3cd98e5
-- Demo video: TODO YouTube unlisted link
+- Demo video: pending YouTube upload
 
 ## What to test
 

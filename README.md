@@ -1,6 +1,6 @@
 # Private Scratch Wallet
 
-**Confidential autonomous DeFi risk policies with iExec Nox concepts on Ethereum Sepolia.**
+**Confidential autonomous DeFi risk policies with an iExec Nox-compatible design on Ethereum Sepolia.**
 
 > Scratch Wallet limits downside. Private Scratch Wallet keeps the downside policy private.
 
@@ -45,6 +45,7 @@ No backend server is required.
 - Hardhat Solidity contract.
 - Sepolia deployment tooling.
 - Nox-compatible adapter in `nox/`.
+- Official Nox package audit in `docs/nox-official-integration-audit.md`.
 - `feedback.md` for iExec tool feedback.
 - GitHub Actions workflow for GitHub Pages.
 
@@ -161,4 +162,4 @@ Public Sepolia values:
 - risk tier;
 - report URI.
 
-The current repo includes a Nox-compatible confidential flow and explicit production integration plan. The final hackathon pass should replace the adapter with the strongest official iExec Nox integration available in the time window.
+The current repo includes a Nox-compatible confidential flow, official Nox package audit, and explicit production integration plan. It does not claim a live Nox runtime deployment on Ethereum Sepolia because the official local runtime path currently targets Hardhat 3/Docker and the handle SDK defaults target Arbitrum Sepolia.

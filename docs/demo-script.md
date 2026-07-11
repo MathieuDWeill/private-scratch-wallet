@@ -1,29 +1,36 @@
-# Demo script under 4 minutes
+# Demo Script Under 4 Minutes
 
-## 0:00 — Problem
+## 0:00 - Problem
 
-Autonomous DeFi agents often expose too much. If bankroll, stop-loss thresholds and execution rules are public, the agent can be copied or gamed.
+Autonomous DeFi agents often expose too much. If bankroll, stop-loss thresholds,
+and execution rules are public, the agent can be copied or gamed.
 
-## 0:30 — Solution
+## 0:30 - Solution
 
-Private Scratch Wallet keeps the downside policy private. The user defines a tiny-wallet risk policy, and the public chain only receives a commitment and decision hash.
+Private Scratch Wallet keeps the downside policy private. The user defines a
+tiny-wallet risk policy, and the public chain only receives a commitment and
+decision hash.
 
-## 1:00 — Build a private policy
+## 1:00 - Build a private policy
 
-Show bankroll, max trade, max daily loss, risk mode and Claim Shield.
+Show bankroll, max trade, max daily loss, risk mode, and Claim Shield.
 
-## 1:30 — Public vs private
+## 1:30 - Public vs private
 
-Show private fields hidden and public commitment visible.
+Show private fields locally and the public commitment that will be published.
 
-## 2:00 — Nox flow
+## 2:00 - Nox flow
 
-Explain encrypted inputs, confidential policy computation and public outputs. Say clearly that this repo uses a documented Nox-compatible adapter unless a verified Nox runtime deployment has been completed.
+Explain private policy inputs, the confidential computation boundary, and the
+public commitment output. Mention that the repo includes an official Nox package
+audit and a Nox-compatible adapter with exact production replacement points.
 
-## 2:40 — Sepolia registry
+## 2:40 - Sepolia registry
 
-Connect MetaMask, commit intent, publish decision, show Sepolia Etherscan links.
+Show the deployed Sepolia contract and the sample `commitIntent` /
+`publishDecision` transactions.
 
-## 3:30 — Close
+## 3:30 - Close
 
-Scratch Wallet limits downside. Private Scratch Wallet keeps the downside policy private.
+Scratch Wallet limits downside. Private Scratch Wallet keeps the downside policy
+private.

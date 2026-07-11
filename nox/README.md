@@ -57,7 +57,9 @@ The public commitment output is limited to:
 4. Continue publishing public commitments to `PrivateScratchRegistry` on
    Ethereum Sepolia.
 
-Official Nox package/docs discovery was attempted during finalization, but the
-available package network was timing out. The repo therefore keeps the honest
-Nox-compatible adapter and documents the exact replacement points instead of
-claiming a runtime integration that was not verified.
+Official Nox packages were checked during finalization; see
+`docs/nox-official-integration-audit.md`. The repo keeps the honest
+Nox-compatible adapter because the verified runtime path found for Nox is a
+Hardhat 3 plus Docker local stack or handle encryption defaults outside this
+Ethereum Sepolia no-backend deployment. The exact production replacement points
+are documented instead of claiming a runtime integration that was not verified.

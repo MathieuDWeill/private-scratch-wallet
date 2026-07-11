@@ -30,7 +30,7 @@ https://MathieuDWeill.github.io/private-scratch-wallet/
 
 ## Demo video
 
-TODO: YouTube unlisted link
+Pending YouTube upload. Record with `docs/demo-script.md`; keep under 4 minutes.
 
 ## Sepolia contract
 

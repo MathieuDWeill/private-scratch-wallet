@@ -21,6 +21,7 @@ const required = [
   'docs/demo-script.md',
   'docs/submission.md',
   'docs/judge-notes.md',
+  'docs/nox-official-integration-audit.md',
   'SUBMISSION_READY/CODEX_FINALIZE_PROMPT.md',
   'SUBMISSION_READY/DORAHACKS_FIELDS.md',
   'SUBMISSION_READY/X_POST.md',

@@ -3,46 +3,50 @@
 ## 1. Local checks
 
 ```bash
-npm install
-npm run max:local
+pnpm install --frozen-lockfile --ignore-scripts
+pnpm run max:local
 ```
 
-## 2. Sepolia deploy
+## 2. Sepolia deployment
 
-```bash
-cp .env.example .env
-# add DEPLOYER_PRIVATE_KEY and optionally ETHERSCAN_API_KEY
-npm run deploy:sepolia
-npm run after:deploy
+Current deployed contract:
+
+```text
+0x33145C082811c5E88ce055DAD816aE540a89da94
 ```
 
-## 3. Verify if possible
+Explorer:
 
-```bash
-npm run verify:sepolia
+```text
+https://sepolia.etherscan.io/address/0x33145C082811c5E88ce055DAD816aE540a89da94
 ```
 
-## 4. GitHub Pages
+Sample transactions:
 
-```bash
-git add .
-git commit -m "Build Private Scratch Wallet"
-gh repo create private-scratch-wallet --public --source=. --remote=origin --push
+- commitIntent: https://sepolia.etherscan.io/tx/0xacb0662e5ec058ef664fbcd99869988cca71c4ffadbe770f4c03b62b41b96109
+- publishDecision: https://sepolia.etherscan.io/tx/0x2543771ad364220b9172a86eea2373556e74454ab89920aeeba5499bd3cd98e5
+
+## 3. GitHub Pages
+
+GitHub Pages is enabled from Actions and deployed at:
+
+```text
+https://mathieudweill.github.io/private-scratch-wallet/
 ```
 
-Then GitHub → Settings → Pages → GitHub Actions.
+## 4. Demo video
 
-## 5. Demo video
-
-Use `SUBMISSION_READY/VIDEO_SCRIPT_MUREKA.md` and show:
+Use `SUBMISSION_READY/VIDEO_SCRIPT_MUREKA.md` or `docs/demo-script.md`.
+Keep the video under 4 minutes and show:
 
 - private policy builder;
 - public vs private view;
-- Sepolia commit;
-- decision publish;
-- read intent;
-- feedback.md.
+- Nox-compatible confidential boundary;
+- official Nox audit file;
+- Sepolia contract;
+- sample commit and decision transactions;
+- `feedback.md`.
 
-## 6. X submission
+## 5. X submission
 
 Use `SUBMISSION_READY/FINAL_X_POST.md` and tag `@iEx_ec`.

@@ -22,12 +22,12 @@ Private values such as bankroll, max loss, max trade size, and edge threshold ar
 - `nox/production_nox_integration_plan.md`
 - `feedback.md`
 
-## Evidence links to fill after deployment
+## Evidence links
 
-- GitHub:
-- GitHub Pages:
-- Sepolia contract:
-- Commit tx:
-- Decision tx:
-- Demo video:
-- X post:
+- GitHub: https://github.com/MathieuDWeill/private-scratch-wallet
+- GitHub Pages: https://mathieudweill.github.io/private-scratch-wallet/
+- Sepolia contract: https://sepolia.etherscan.io/address/0x33145C082811c5E88ce055DAD816aE540a89da94
+- Commit tx: https://sepolia.etherscan.io/tx/0xacb0662e5ec058ef664fbcd99869988cca71c4ffadbe770f4c03b62b41b96109
+- Decision tx: https://sepolia.etherscan.io/tx/0x2543771ad364220b9172a86eea2373556e74454ab89920aeeba5499bd3cd98e5
+- Demo video: pending YouTube upload
+- X post: pending publication

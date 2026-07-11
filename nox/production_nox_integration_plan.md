@@ -2,10 +2,12 @@
 
 The current repo contains a Nox-compatible adapter so the UX, data model, and Sepolia registry can be tested end-to-end without a backend. This file defines the exact replacement path for a production Nox integration.
 
-Finalization status: official Nox package/docs discovery was attempted, but the
-available npm/package network timed out before a verified runtime integration
-could be installed. No fake runtime claim is made. The project remains a
-documented Nox-compatible adapter plus Sepolia registry implementation.
+Finalization status: official Nox packages were checked and recorded in
+`docs/nox-official-integration-audit.md`. No fake runtime claim is made. The
+project remains a documented Nox-compatible adapter plus Ethereum Sepolia
+registry implementation because the verified official runtime path currently
+targets Hardhat 3 plus Docker Compose, while this submission is a no-backend
+GitHub Pages dApp deployed against Ethereum Sepolia.
 
 ## Confidential inputs
 

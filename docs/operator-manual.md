@@ -25,7 +25,11 @@ PRIVATE_SCRATCH_REGISTRY_ADDRESS=0x... npm run commit:sample
 
 ## 4. GitHub Pages
 
-Push to GitHub and enable Pages from GitHub Actions.
+GitHub Pages is deployed from GitHub Actions:
+
+```text
+https://mathieudweill.github.io/private-scratch-wallet/
+```
 
 ## 5. Demo video
 
