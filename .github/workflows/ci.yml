@@ -13,11 +13,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
-      - run: npm ci
-      - run: npm run preflight:strict
-      - run: npm run typecheck
-      - run: npm run build
-      - run: npm run compile
-      - run: npm run test
+          node-version: 24
+          cache: pnpm
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run preflight:strict
+      - run: pnpm run typecheck
+      - run: pnpm run build
+      - run: pnpm run compile
+      - run: pnpm run test

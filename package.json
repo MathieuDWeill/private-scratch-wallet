@@ -4,6 +4,7 @@
   "private": true,
   "description": "Private Scratch Wallet \u2014 confidential autonomous DeFi risk policies with iExec Nox concepts on Sepolia.",
   "license": "MIT",
+  "packageManager": "pnpm@11.11.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
