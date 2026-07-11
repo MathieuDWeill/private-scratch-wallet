@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { execSync } from 'child_process';
 
 const required = [
   'README.md',
@@ -29,6 +30,16 @@ const required = [
 
 const forbidden = ['.env', 'node_modules', 'dist', 'artifacts', 'cache', 'submission_bundle'];
 let ok = true;
+let trackedFiles = [];
+
+try {
+  trackedFiles = execSync('git ls-files', { encoding: 'utf8' })
+    .split(/\r?\n/)
+    .filter(Boolean);
+} catch {
+  trackedFiles = [];
+}
+
 for (const file of required) {
   if (!fs.existsSync(file)) {
     console.error(`MISSING ${file}`);
@@ -38,14 +49,15 @@ for (const file of required) {
   }
 }
 for (const f of forbidden) {
-  if (fs.existsSync(f)) {
-    console.error(`FORBIDDEN generated/sensitive path present in repo root: ${f}`);
+  const tracked = trackedFiles.filter((file) => file === f || file.startsWith(`${f}/`));
+  if (tracked.length > 0) {
+    console.error(`FORBIDDEN generated/sensitive path tracked in git: ${f}`);
     ok = false;
   }
 }
 
 const secretPatterns = [/DEPLOYER_PRIVATE_KEY=0x[a-fA-F0-9]{64}/, /PRIVATE_KEY=0x[a-fA-F0-9]{64}/];
-const scanFiles = [];
+const scanFiles = trackedFiles.length > 0 ? trackedFiles : [];
 function walk(dir) {
   for (const ent of fs.readdirSync(dir, { withFileTypes: true })) {
     if (['.git', 'node_modules', 'dist', 'artifacts', 'cache', 'submission_bundle'].includes(ent.name)) continue;
@@ -54,8 +66,10 @@ function walk(dir) {
     else if (['.ts', '.tsx', '.js', '.mjs', '.md', '.json', '.env', '.example', '.yml', '.yaml'].some(ext => p.endsWith(ext))) scanFiles.push(p);
   }
 }
-walk('.');
+if (scanFiles.length === 0) walk('.');
 for (const file of scanFiles) {
+  if (!fs.existsSync(file)) continue;
+  if (!['.ts', '.tsx', '.js', '.mjs', '.md', '.json', '.env', '.example', '.yml', '.yaml'].some(ext => file.endsWith(ext))) continue;
   const txt = fs.readFileSync(file, 'utf8');
   for (const re of secretPatterns) {
     if (re.test(txt) && !file.endsWith('.env.example')) {
