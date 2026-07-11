@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 24
       - run: corepack enable
-      - run: pnpm install --frozen-lockfile
+      - run: pnpm install --frozen-lockfile --ignore-scripts
       - run: GITHUB_PAGES=true pnpm run build
       - uses: actions/upload-pages-artifact@v3
         with:

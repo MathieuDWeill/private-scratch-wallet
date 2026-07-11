@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 24
       - run: corepack enable
-      - run: pnpm install --frozen-lockfile
+      - run: pnpm install --frozen-lockfile --ignore-scripts
       - run: pnpm run preflight:strict
       - run: pnpm run typecheck
       - run: pnpm run build
