@@ -9,6 +9,15 @@ npm install
 npm run ship
 ```
 
+If your local npm exits with `Exit handler never called`, use the repo's
+declared package manager instead:
+
+```bash
+corepack enable
+pnpm install --frozen-lockfile --ignore-scripts
+npm run ship
+```
+
 ## Deploy contract to Sepolia
 
 ```bash

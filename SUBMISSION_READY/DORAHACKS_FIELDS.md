@@ -26,7 +26,7 @@ https://github.com/MathieuDWeill/private-scratch-wallet
 
 ## Website
 
-https://MathieuDWeill.github.io/private-scratch-wallet/
+https://mathieudweill.github.io/private-scratch-wallet/
 
 ## Demo video
 

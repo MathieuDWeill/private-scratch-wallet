@@ -21,11 +21,11 @@ const manifest = {
   builder: 'Mathieu D. WEILL',
   hackathon: 'iExec WTF Hackathon Summer Edition',
   required_next_steps: [
-    'Deploy PrivateScratchRegistry to Ethereum Sepolia',
-    'Set VITE_PRIVATE_SCRATCH_REGISTRY_ADDRESS for GitHub Pages build',
-    'Publish GitHub Pages',
+    'Push the finalized repo to GitHub',
+    'Enable GitHub Pages from GitHub Actions',
     'Record 4-minute max demo video',
-    'Post on X tagging @iEx_ec with GitHub and demo links'
+    'Post on X tagging @iEx_ec with GitHub, app, contract, and demo links',
+    'Paste the GitHub, app, Sepolia, feedback.md, and demo links into DoraHacks'
   ]
 };
 fs.writeFileSync(path.join(out, 'manifest.json'), JSON.stringify(manifest, null, 2));

@@ -56,6 +56,11 @@ npm install
 npm run dev
 ```
 
+The repo is pinned to `pnpm@11.11.0` for CI/GitHub Pages. If your local npm
+version fails internally during install, run `corepack enable` and
+`pnpm install --frozen-lockfile --ignore-scripts`, then continue with the same
+`npm run ...` scripts.
+
 ## Build
 
 ```bash

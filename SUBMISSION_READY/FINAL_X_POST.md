@@ -6,7 +6,7 @@ Autonomous DeFi agents should not reveal sensitive risk rules like bankroll, max
 
 GitHub: https://github.com/MathieuDWeill/private-scratch-wallet
 Demo: pending YouTube upload
-GitHub Pages: https://MathieuDWeill.github.io/private-scratch-wallet/
+GitHub Pages: https://mathieudweill.github.io/private-scratch-wallet/
 Sepolia contract: https://sepolia.etherscan.io/address/0x33145C082811c5E88ce055DAD816aE540a89da94
 
 Built for @iEx_ec WTF Hackathon.
